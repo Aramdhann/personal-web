@@ -9,6 +9,9 @@
           <router-link class="nav-item" to="/portofolio"
             >💼<span>Portofolio</span></router-link
           >
+          <router-link class="nav-item" to="/certificate"
+            >✅<span>Certified</span></router-link
+          >
           <router-link class="nav-item" to="/blog"
             >📖<span>Blog</span></router-link
           >
@@ -23,7 +26,7 @@
   </nav>
 </template>
 
-<style>
+<style scoped>
 #nav {
   display: flex;
   align-items: center;
@@ -64,6 +67,16 @@
   padding: 10px;
 }
 
+.btn-base-animate:hover {
+  transform: translate(2px, -2px);
+}
+
+.btn-animate:hover {
+  transition: 0.1s;
+  transform: translate(5px, -5px);
+  box-shadow: -5px 5px var(--secondary-color);
+}
+
 .btn-animate {
   display: flex;
   color: var(--white);
@@ -72,7 +85,7 @@
   border-radius: 8px;
 }
 
-@media (max-width: 614px) {
+@media (max-width: 715px) {
   .nav-item span {
     display: none;
   }
