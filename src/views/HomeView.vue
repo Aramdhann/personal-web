@@ -1,11 +1,11 @@
 <script setup>
-import CertificateItem from '@/components/CertificateItem.vue'
-import FeaturedProjectItem from "@/components/FeaturedProjectItem.vue";
+import Certificate from '@/components/Certificate.vue'
+import FeaturedProject from "@/components/FeaturedProject.vue";
 import HeroSection from "@/components/HeroSection.vue";
 </script>
 
 <template>
   <HeroSection />
-  <FeaturedProjectItem />
-  <CertificateItem/>
+  <FeaturedProject />
+  <Certificate/>
 </template>
