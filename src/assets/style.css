@@ -10,20 +10,9 @@
   text-decoration: underline;
 }
 
-.btn-base-animate:hover {
-  transform: translate(2px, -2px);
-}
-
-.btn-animate:hover {
-  transition: 0.1s;
-  transform: translate(5px, -5px);
-  box-shadow: -5px 5px var(--secondary-color);
-}
-
 h1 {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 25px;
   color: var(--main-color);
 }
 
@@ -39,6 +28,7 @@ h1 {
   box-shadow: 0px 0px 0px 1px var(--black) inset;
   border-radius: 10px;
   background-color: var(--secondary-color);
+  width: max-content;
 }
 
 .card-banner {
@@ -81,6 +71,118 @@ h1 {
 
 .card-header img {
   max-width: 45px;
+}
+
+.card-tag {
+  font-size: 12px;
+  display: flex;
+  padding: 2px 5px 4px 5px;
+  border-radius: 5px;
+  width: fit-content;
+  opacity: 1;
+  transition: 0.4s;
+  background: var(--blue); 
+}
+
+.card-tag:hover {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.card-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.card-btn-list {
+  display: flex;
+  gap: 10px;
+}
+
+.card-btn-list > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: none;
+  border-radius: 7px;
+  color: var(--white);
+  transition: 0.4s;
+  opacity: 1;
+}
+
+.card-btn-list a:hover {
+  opacity: 0.7;
+}
+
+.card-btn-list a img {
+  max-width: 30px;
+  object-fit: contain;
+}
+
+.circle-2 {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #27ae60;
+  animation: blink 1s linear infinite;
+}
+
+.circle-1 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #6fcf97;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: blinkk 2s linear infinite;
+}
+
+@keyframes blinkk {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #af2f00;
 }
 
 .certif-title {
