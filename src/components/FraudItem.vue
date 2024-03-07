@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .fraud {
   color: var(--black);
   text-align: center;
