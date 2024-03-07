@@ -41,9 +41,8 @@ const position = ref([
       </div>
       <div class="profile">
         <div class="status">
-          <div class="status-icon">
-            <span class="status-active"></span>
-            <span class="status-active-sub"></span>
+          <div class="circle-1">
+            <div class="circle-2"></div>
           </div>
           <p>Open to work</p>
         </div>
@@ -57,7 +56,7 @@ const position = ref([
   </section>
 </template>
 
-<style>
+<style scoped>
 .hero {
   width: 100%;
   padding: 115px 0;
@@ -129,11 +128,11 @@ const position = ref([
   gap: 10px;
   color: var(--main-color);
   background: var(--white);
-  padding: 1px 10px;
+  padding: 3px 8px;
   border-radius: 8px;
-  border: 3px solid var(--main-color);
+  border: 2px solid var(--main-color);
   width: fit-content;
-  transform: translate(-45px, 190px);
+  transform: translate(-45px, 200px);
   cursor: default;
 }
 
@@ -148,35 +147,6 @@ const position = ref([
   justify-content: center;
   width: fit-content;
   animation: blink 1s linear infinite;
-}
-
-.status-active {
-  width: 10px;
-  height: 10px;
-  background: #6fcf97;
-  display: inline-block;
-  position: absolute;
-  border-radius: 50%;
-}
-
-.status-active-sub {
-  width: 5px;
-  height: 5px;
-  background: #27ae60;
-  position: relative;
-  border-radius: 50%;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @media (max-width: 876px) {
