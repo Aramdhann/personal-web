@@ -1,34 +1,22 @@
-<script setup>
-const props = defineProps({
-  action: String,
-});
-
-const message = `There is no content ${props.action}`;
-</script>
-
 <template>
-  <div class="modal">
-    {{ message }}
-    <span class="close">&times;</span>
-  </div>
+    <div class="modal">
+      <p>Content is not available yet, keep updating soon!</p>
+    </div>
 </template>
 
 <style scoped>
 .modal {
+  display: flex;
   width: fit-content;
-  position: sticky;
-  top: 80px;
-  margin-left: auto;
-  z-index: 100;
-  margin-top: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
   margin-right: 10px;
+  z-index: 100;
   background: #ae2727;
   border: 2px solid #cf6f6f;
   border-radius: 8px;
   padding: 10px;
-}
-
-.close {
-  margin-left: 10px;
 }
 </style>
