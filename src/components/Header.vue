@@ -1,9 +1,16 @@
+<script setup>
+const props = defineProps({
+  seeAllLink: { type: String, default: "#" },
+  seeAllText: { type: String, default: "See All" },
+});
+</script>
+
 <template>
   <div class="header">
     <h1>
       <slot name="title"></slot>
     </h1>
-    <a href="">See all</a>
+    <a :href="seeAllLink">{{ seeAllText }}</a>
   </div>
 </template>
 
@@ -14,10 +21,11 @@
   margin-bottom: 25px;
 }
 
-.header a {
+a {
   display: block;
   text-decoration: none;
   color: var(--main-color);
+  cursor: pointer;
 
   &:hover {
     opacity: 0.7;
