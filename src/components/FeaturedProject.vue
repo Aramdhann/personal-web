@@ -5,7 +5,7 @@ import Header from "@/components/Header.vue";
 
 <template>
   <section class="container">
-    <Header :seeAllLink="'/portfolio'" :seeAllText="'See All Project'">
+    <Header :seeAllLink="'/portofolio'" :seeAllText="'See All Project'">
       <template #title>Featured Projects</template>
     </Header>
     <div class="project-list">
