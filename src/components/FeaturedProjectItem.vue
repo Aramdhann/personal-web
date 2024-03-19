@@ -24,10 +24,11 @@ const truncateDescription = (description, limit) => {
 
 <template>
   <Toast v-if="showToast" />
-  <div
+  <a
     v-if="projects && projects.length > 0"
     v-for="project in projects"
     :key="project.data.project_id"
+    :href="`/portofolio/${project.data.project_id}`"
   >
     <div class="card-base-animate">
       <div class="card card-animate">
@@ -63,7 +64,7 @@ const truncateDescription = (description, limit) => {
         </div>
       </div>
     </div>
-  </div>
+  </a>
   <div v-else>No project data available</div>
 </template>
 
