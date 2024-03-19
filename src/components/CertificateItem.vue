@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  <!-- <div class="competition">
+  <div class="competition">
     <div class="card-base-animate">
       <div class="card card-animate">
         <div class="card-content">
@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 </template>
 
 <style scoped>
