@@ -25,7 +25,10 @@
 
 <style scoped>
 .footer {
+  position: fixed;
+  bottom: 0;
   display: flex;
+  min-width: 100%;
   padding: 18px 0;
   background: var(--main-color);
 }
