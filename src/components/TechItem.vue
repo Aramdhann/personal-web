@@ -1,74 +1,62 @@
 <script setup>
 import { ref } from "vue";
 
-// const techStack = ref([
-//   { id: 1, name: "ReactJS", image: "../assets/images/tech-stack/react.svg" },
-//   { id: 2, name: "Laravel", image: "../assets/images/tech-stack/laravel.svg" },
-//   { id: 3, name: "VueJS", image: "../assets/images/tech-stack/vue.svg" },
-//   {
-//     id: 4,
-//     name: "Javascript",
-//     image: "../assets/images/tech-stack/javascript.svg",
-//   },
-//   {
-//     id: 5,
-//     name: "Typescript",
-//     image: "../assets/images/tech-stack/typescript.svg",
-//   },
-//   { id: 6, name: "PHP", image: "../assets/images/tech-stack/php.svg" },
-//   { id: 7, name: "JQuery", image: "../assets/images/tech-stack/jquery.svg" },
-//   { id: 8, name: "NodeJS", image: "../assets/images/tech-stack/nodejs.svg" },
-//   { id: 9, name: "Vuetify", image: "../assets/images/tech-stack/vuetify.svg" },
-//   {
-//     id: 10,
-//     name: "Tailwind CSS",
-//     image: "../assets/images/tech-stack/tailwind.svg",
-//   },
-//   {
-//     id: 11,
-//     name: "Bootstrap",
-//     image: "../assets/images/tech-stack/bootstrap.svg",
-//   },
-//   { id: 12, name: "MySQL", image: "../assets/images/tech-stack/mysql.svg" },
-//   { id: 13, name: "MongoDB", image: "../assets/images/tech-stack/mongodb.svg" },
-//   {
-//     id: 14,
-//     name: "PostgreSQL",
-//     image: "../assets/images/tech-stack/postgresql.svg",
-//   },
-//   { id: 15, name: "HTML 5", image: "../assets/images/tech-stack/html5.svg" },
-//   { id: 16, name: "CSS 3", image: "../assets/images/tech-stack/css3.svg" },
-//   { id: 17, name: "Python", image: "../assets/images/tech-stack/python.svg" },
-//   {
-//     id: 18,
-//     name: "Tensorflow",
-//     image: "../assets/images/tech-stack/tensorflow.svg",
-//   },
-//   { id: 19, name: "Git", image: "../assets/images/tech-stack/git.svg" },
-// ]);
+const techStacks = ref([
+  { id: 1, name: "ReactJS", image: "react.svg" },
+  { id: 2, name: "Laravel", image: "laravel.svg" },
+  { id: 3, name: "VueJS", image: "vue.svg" },
+  {
+    id: 4,
+    name: "Javascript",
+    image: "javascript.svg",
+  },
+  {
+    id: 5,
+    name: "Typescript",
+    image: "typescript.svg",
+  },
+  { id: 6, name: "PHP", image: "php.svg" },
+  { id: 7, name: "JQuery", image: "jquery.svg" },
+  { id: 8, name: "NodeJS", image: "nodejs.svg" },
+  { id: 9, name: "Vuetify", image: "vuetify.svg" },
+  {
+    id: 10,
+    name: "Tailwind CSS",
+    image: "tailwind.svg",
+  },
+  {
+    id: 11,
+    name: "Bootstrap",
+    image: "bootstrap.svg",
+  },
+  { id: 12, name: "MySQL", image: "mysql.svg" },
+  { id: 13, name: "MongoDB", image: "mongodb.svg" },
+  {
+    id: 14,
+    name: "PostgreSQL",
+    image: "postgresql.svg",
+  },
+  { id: 15, name: "HTML 5", image: "html5.svg" },
+  { id: 16, name: "CSS 3", image: "css3.svg" },
+  { id: 17, name: "Python", image: "python.svg" },
+  {
+    id: 18,
+    name: "Tensorflow",
+    image: "tensorflow.svg",
+  },
+  { id: 19, name: "Git", image: "git.svg" },
+]);
 </script>
 
 <template>
   <div class="tech">
     <div class="row">
-      <img src="../assets/images/tech-stack/react.svg" alt="react js" />
-      <img src="../assets/images/tech-stack/laravel.svg" alt="laravel" />
-      <img src="../assets/images/tech-stack/vue.svg" alt="vue" />
-      <img src="../assets/images/tech-stack/javascript.svg" alt="javascript" />
-      <img src="../assets/images/tech-stack/typescript.svg" alt="typescript" />
-      <img src="../assets/images/tech-stack/php.svg" alt="php" />
-      <img src="../assets/images/tech-stack/jquery.svg" alt="jquery" />
-      <img src="../assets/images/tech-stack/nodejs.svg" alt="nodejs" />
-      <img src="../assets/images/tech-stack/vuetify.svg" alt="vuetify" />
-      <img src="../assets/images/tech-stack/tailwind.svg" alt="tailwindcss" />
-      <img src="../assets/images/tech-stack/bootstrap.svg" alt="bootstrap" />
-      <img src="../assets/images/tech-stack/mysql.svg" alt="mysql" />
-      <img src="../assets/images/tech-stack/mongodb.svg" alt="mongodb" />
-      <img src="../assets/images/tech-stack/postgresql.svg" alt="postgresql" />
-      <img src="../assets/images/tech-stack/html5.svg" alt="html5" />
-      <img src="../assets/images/tech-stack/python.svg" alt="python" />
-      <img src="../assets/images/tech-stack/tensorflow.svg" alt="tensorflow" />
-      <img src="../assets/images/tech-stack/git.svg" alt="git" />
+      <div v-for="techStack in techStacks" :key="techStack.id" class="tooltip">
+      <img :src="`./src/assets/images/tech-stack/${techStack.image}`" :alt="techStack.name" />
+      <span class="tooltip-text">
+        {{techStack.name}}
+      </span>
+    </div>
       <div>
         <p style="font-size: 20px; font-weight: lighter">+</p>
         <p>
@@ -78,16 +66,48 @@ import { ref } from "vue";
       </div>
     </div>
   </div>
-  <!-- <div class="tech">
-    <ul class="row">
-      <li v-for="tech in getTechStack" :key="tech.id">
-        <img :src="tech.image" :alt="tech.name" />
-      </li>
-    </ul>
-  </div> -->
 </template>
 
-<style>
+<style scoped>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 .tech {
   margin-top: 35px;
   width: 90%;
