@@ -7,6 +7,14 @@ import FraudItem from "@/components/FraudItem.vue";
 <template>
   <FraudItem />
   <NavbarItem />
-  <router-view></router-view>
+  <div class="margin">
+    <router-view></router-view>
+  </div>
   <FooterItem />
 </template>
+
+<style scoped>
+.margin {
+  margin-bottom: 70px;
+}
+</style>

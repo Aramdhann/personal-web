@@ -86,6 +86,10 @@
 }
 
 @media (max-width: 715px) {
+  #nav {
+    padding: 10px 0;
+  }
+  
   .nav-item span {
     display: none;
   }
