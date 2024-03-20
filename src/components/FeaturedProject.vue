@@ -1,6 +1,7 @@
 <script setup>
 import FeaturedProjectItem from "@/components/FeaturedProjectItem.vue";
 import Header from "@/components/Header.vue";
+import projects from "@/data/project-data.json";
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import Header from "@/components/Header.vue";
       <template #title>Featured Projects</template>
     </Header>
     <div class="project-list">
-      <FeaturedProjectItem />
+      <FeaturedProjectItem :items="projects" :limit="1"/>
     </div>
   </section>
 </template>

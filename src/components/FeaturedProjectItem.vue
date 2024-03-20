@@ -1,8 +1,18 @@
 <script setup>
 import Tag from "@/components/Tag.vue";
 import Toast from "@/components/Toast.vue";
-import projects from "@/data/project-data.json";
-import { ref } from "vue";
+import { ref, computed } from "vue";
+
+const props = defineProps({
+  items: {
+    type: Array,
+    required: true
+  },
+  limit: {
+    type: Number,
+    default: null
+  }
+})
 
 const showToast = ref(false);
 
@@ -20,14 +30,22 @@ const truncateDescription = (description, limit) => {
   }
   return description;
 };
+
+const limitedItems = computed(() => {
+  if (props.limit !== null) {
+    return props.items.slice(0, props.limit)
+  } else {
+    return props.items
+  }
+})
 </script>
 
 <template>
   <Toast v-if="showToast" />
   <a
-    v-if="projects && projects.length > 0"
-    v-for="project in projects"
-    :key="project.data.project_id"
+    v-if="limitedItems && limitedItems.length > 0"
+    v-for="(project, index) in limitedItems"
+    :key="index"
     :href="`/portofolio/${project.data.project_id}`"
   >
     <div class="card-base-animate">

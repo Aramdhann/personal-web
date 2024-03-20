@@ -1,10 +1,11 @@
 <script setup>
 import FeaturedProjectItem from '@/components/FeaturedProjectItem.vue'
+import projects from "@/data/project-data.json";
 </script>
 
 <template>
   <div class="container project-list">
-    <FeaturedProjectItem/>
+    <FeaturedProjectItem :items="projects"/>
   </div>
 </template>
 
@@ -16,5 +17,6 @@ import FeaturedProjectItem from '@/components/FeaturedProjectItem.vue'
 
 .project-list {
   flex-wrap: wrap;
+  justify-content: center;
 }
 </style>
