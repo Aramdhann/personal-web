@@ -1,65 +1,69 @@
+<script setup>
+import { computed } from "vue";
+
+const props = defineProps({
+  items: {
+    type: Array,
+    required: true,
+  },
+  limit: {
+    type: Number,
+    default: null,
+  },
+});
+
+const truncateDescription = (description, limit) => {
+  const words = description.split(" ");
+  if (words.length > limit) {
+    return words.slice(0, limit).join(" ") + " ...";
+  }
+  return description;
+};
+
+const limitedItems = computed(() => {
+  if (props.limit !== null) {
+    return props.items.slice(0, props.limit);
+  } else {
+    return props.items;
+  }
+});
+</script>
+
 <template>
-  <div class="card-base-animate">
+  <div
+    v-if="limitedItems && limitedItems.length > 0"
+    v-for="(certif, index) in limitedItems"
+    :key="index"
+    class="card-base-animate"
+  >
     <div class="card card-animate">
       <div class="card-content">
         <div class="card-header">
-          <img src="../assets/images/certif.png" alt="icon" />
+          <img
+            :src="`./src/assets/images/${certif.data.type}.png`"
+            alt="icon"
+          />
           <div>
-            <p class="certif-title">Title Certification</p>
-            <p>by company name</p>
+            <p class="certif-title">{{ certif.data.title }}</p>
+            <p>held by {{ certif.data.by }}</p>
           </div>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, at
-          dicta quia nesciunt nulla magni voluptate dolorem ab labore provident
-          perferendis quas nemo, sed veritatis fugit tenetur eos enim quisquam?
-          <a class="text-link">Read more</a>
+          {{ truncateDescription(certif.data.description, 10) }}
         </p>
         <div class="card-tag-list">
-          <div class="card-tag">Certified at 19-12-2023</div>
-          <div class="card-tag">Due to 19-12-2023</div>
+          <div class="card-tag">
+            Certified at {{ certif.data.certified_date }}
+          </div>
+          <div class="card-tag">Due to {{ certif.data.due_to }}</div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="competition">
-    <div class="card-base-animate">
-      <div class="card card-animate">
-        <div class="card-content">
-          <div class="card-header">
-            <img
-              class="icon-compe"
-              src="../assets/images/compe.png"
-              alt="icon"
-            />
-            <div>
-              <p class="certif-title">Title Competition</p>
-              <p>by company name</p>
-            </div>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-            at dicta quia nesciunt nulla magni voluptate dolorem ab labore
-            provident perferendis quas nemo, sed veritatis fugit tenetur eos
-            enim quisquam?
-            <a class="text-link">Read more</a>
-          </p>
-          <div class="card-tag-list">
-            <div class="card-tag">Certified at 19-12-2023</div>
-            <div class="card-tag">Due to 19-12-2023</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div v-else>No certificate data available</div>
 </template>
 
 <style scoped>
-.competition img {
-  width: 40px;
-}
-
 @media (max-width: 876px) {
   .certificate {
     padding: 80px 0;

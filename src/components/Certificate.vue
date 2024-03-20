@@ -1,6 +1,7 @@
 <script setup>
 import CertificateItem from "@/components/CertificateItem.vue";
 import Header from "@/components/Header.vue";
+import certificates from "@/data/certif-data.json";
 </script>
 
 <template>
@@ -12,10 +13,7 @@ import Header from "@/components/Header.vue";
       <template #title> Certificate & Competition </template>
     </Header>
     <div class="certif-list">
-      <CertificateItem />
-      <CertificateItem />
-      <CertificateItem />
-      <CertificateItem />
+      <CertificateItem :items="certificates" :limit="3" />
     </div>
   </section>
 </template>
