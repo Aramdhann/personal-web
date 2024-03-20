@@ -40,7 +40,7 @@ const limitedItems = computed(() => {
       <div class="card-content">
         <div class="card-header">
           <img
-            :src="`./src/assets/images/${certif.data.type}.png`"
+            :src="`/images/${certif.data.type}.png`"
             alt="icon"
           />
           <div>

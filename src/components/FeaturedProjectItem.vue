@@ -54,8 +54,8 @@ const limitedItems = computed(() => {
           class="card-banner"
           :src="
             project.data.image
-              ? `./src/assets/images/projects/${project.data.image}`
-              : './src/assets/images/no-image.jpg'
+              ? `/images/projects/${project.data.image}`
+              : '/images/no-image.jpg'
           "
           :alt="project.data.title"
         />
@@ -70,12 +70,12 @@ const limitedItems = computed(() => {
               :href="project.data.links.view"
               style="background: var(--main-color)"
               @click="triggerToast"
-              ><img src="../assets/images/view.png" alt="view project"
+              ><img src="/images/view.png" alt="view project"
             /></a>
             <a
               :href="project.data.links.github"
               style="background-color: var(--black)"
-              ><img src="../assets/images/git.png" alt="github project"
+              ><img src="/images/git.png" alt="github project"
             /></a>
           </div>
           <div class="card-tag-list">

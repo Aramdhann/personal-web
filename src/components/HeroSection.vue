@@ -15,7 +15,7 @@ const position = ref([
     <div class="hero">
       <div class="summary">
         <div class="name">
-          <img src="../assets/images/verify.png" alt="verified name" />
+          <img src="/images/verify.png" alt="verified name" />
           <div class="text">
             <p>Moch. Raditya Aulya Aramdhan</p>
             <span>as</span>
@@ -47,7 +47,7 @@ const position = ref([
           <p>Open to work</p>
         </div>
         <img
-          src="../assets/images/photo.png"
+          src="/images/photo.png"
           alt="photo profile"
           class="photo"
         />
