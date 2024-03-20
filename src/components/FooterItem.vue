@@ -1,22 +1,43 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+
+const items = ref([
+  {
+    id: 1,
+    name: "Github",
+    link: "https://github.com/Aramdhann",
+    icon: "bi bi-github",
+  },
+  {
+    id: 2,
+    name: "Gitlab",
+    link: "https://gitlab.com/Aramdhann",
+    icon: "bi bi-gitlab",
+  },
+  {
+    id: 3,
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/mochraditya",
+    icon: "bi bi-linkedin",
+  },
+  {
+    id: 4,
+    name: "Discord",
+    link: "https://discord.com/users/455921717513289750",
+    icon: "bi bi-discord",
+  },
+]);
+</script>
 
 <template>
   <div class="footer">
     <div class="container">
       <div class="circle-1"><div class="circle-2"></div></div>
       <p>Let's connect:</p>
-      <div class="footer-icon">
-        <a href="https://github.com/Aramdhann" target="_blank">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="https://gitlab.com/Aramdhann" target="_blank">
-          <i class="bi bi-gitlab"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/mochraditya" target="_blank">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://discord.com/users/455921717513289750" target="_blank">
-          <i class="bi bi-discord"></i>
+      <div v-for="(item, index) in items" :key="index" class="footer-icon">
+        <a :href="item.link" target="_blank" class="tooltip">
+          <i :class="item.icon"></i>
+          <span class="tooltip-text">{{ item.name }}</span>
         </a>
       </div>
     </div>
@@ -24,12 +45,23 @@
 </template>
 
 <style scoped>
+@media (max-width: 715px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+p {
+  font-size: 14px;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
   display: flex;
   min-width: 100%;
-  padding: 18px 0;
+  padding: 8px 0;
   background: var(--main-color);
 }
 
@@ -45,7 +77,7 @@
 }
 
 .footer-icon i {
-  font-size: 32px;
+  font-size: 24px;
   color: white;
   transition: 0.2s ease-out;
 }
