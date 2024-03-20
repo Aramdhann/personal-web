@@ -6,13 +6,13 @@ import { ref, computed } from "vue";
 const props = defineProps({
   items: {
     type: Array,
-    required: true
+    required: true,
   },
   limit: {
     type: Number,
-    default: null
-  }
-})
+    default: null,
+  },
+});
 
 const showToast = ref(false);
 
@@ -33,11 +33,11 @@ const truncateDescription = (description, limit) => {
 
 const limitedItems = computed(() => {
   if (props.limit !== null) {
-    return props.items.slice(0, props.limit)
+    return props.items.slice(0, props.limit);
   } else {
-    return props.items
+    return props.items;
   }
-})
+});
 </script>
 
 <template>
@@ -46,13 +46,17 @@ const limitedItems = computed(() => {
     v-if="limitedItems && limitedItems.length > 0"
     v-for="(project, index) in limitedItems"
     :key="index"
-    :href="`/portofolio/${project.data.project_id}`"
+    :href="`/portofolio/${project.data.id}`"
   >
     <div class="card-base-animate">
       <div class="card card-animate">
         <img
           class="card-banner"
-          :src="`./src/assets/images/projects/${project.data.image}`"
+          :src="
+            project.data.image
+              ? `./src/assets/images/projects/${project.data.image}`
+              : './src/assets/images/no-image.jpg'
+          "
           :alt="project.data.title"
         />
         <div class="card-content">
@@ -89,5 +93,10 @@ const limitedItems = computed(() => {
 <style scoped>
 .description {
   height: 70px;
+}
+
+.card-tag-list {
+  overflow-x: auto;
+  padding-bottom: 17px;
 }
 </style>
