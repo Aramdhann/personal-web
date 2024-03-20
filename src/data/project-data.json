@@ -1,7 +1,7 @@
 [
   {
     "data": {
-      "project_id": 1,
+      "id": 1,
       "image": "compro.png",
       "title": "Company Profile Website",
       "description": "Company profile for PT. Artha Permata Makmur. This project build has several features. This project just show frontend, and the backend in another private repo with realtime get data.",
@@ -16,24 +16,24 @@
   },
   {
     "data": {
-      "project_id": 2,
-      "image": "compro.png",
-      "title": "Project 2",
-      "description": "Description for Project 2. This project has some unique features and functionalities.",
+      "id": 2,
+      "image": "",
+      "title": "Kamar Pelajar",
+      "description": "This is my project as Freelance Frontend Developer in Kamar Pelajar. I have responsibility to redesign and slicing user interface using laravel blade.",
       "links": {
-        "view": "https://example.com/project2",
-        "github": "https://github.com/example/project2"
+        "view": "kamarpelajar.id",
+        "github": "#"
       },
       "tags": {
-        "type": ["Vue.js", "Bootstrap", "Firebase"]
+        "type": ["Laravel 10", "Laravel Blade", "Bootstrap", "MySQL"]
       }
     }
   },
   {
     "data": {
-      "project_id": 3,
-      "image": "compro.png",
-      "title": "Project 3",
+      "id": 3,
+      "image": "",
+      "title": "",
       "description": "Description for Project 3. This project involves advanced technologies and frameworks.",
       "links": {
         "view": "https://example.com/project3",

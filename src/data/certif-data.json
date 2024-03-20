@@ -1,0 +1,35 @@
+[
+  {
+    "data": {
+      "id": 1,
+      "type": "certif",
+      "title": "Huawei Certified ICT Associate (HCIA) Cloud Computing",
+      "by": "Huawei",
+      "description": "This certification program, offered by Huawei, focuses on cloud computing technologies. It covers various aspects of cloud computing, including infrastructure, platforms, and services. Participants learn about key concepts such as virtualization, storage, networking, and security in the context of cloud environments.",
+      "certified_date": "Oct 2021",
+      "due_to": "Oct 2024"
+    }
+  },
+  {
+    "data": {
+      "id": 2,
+      "type": "compe",
+      "title": "Huawei Certified ICT Associate (HCIA) Cloud Computing",
+      "by": "Huawei",
+      "description": "This certification program, offered by Huawei, focuses on cloud computing technologies. It covers various aspects of cloud computing, including infrastructure, platforms, and services. Participants learn about key concepts such as virtualization, storage, networking, and security in the context of cloud environments.",
+      "certified_date": "Oct 2021",
+      "due_to": "Oct 2024"
+    }
+  },
+  {
+    "data": {
+      "id": 3,
+      "type": "certif",
+      "title": "Huawei Certified ICT Associate (HCIA) Cloud Computing",
+      "by": "Huawei",
+      "description": "This certification program, offered by Huawei, focuses on cloud computing technologies. It covers various aspects of cloud computing, including infrastructure, platforms, and services. Participants learn about key concepts such as virtualization, storage, networking, and security in the context of cloud environments.",
+      "certified_date": "Oct 2021",
+      "due_to": "Oct 2024"
+    }
+  }
+]
