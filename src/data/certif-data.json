@@ -2,6 +2,39 @@
   {
     "data": {
       "id": 1,
+      "type": "compe",
+      "title": "6th National Rank in The Huawei ICT Competition 2022 Network Track",
+      "by": "Huawei",
+      "description": "Achieved 6th place nationally in the Huawei ICT Competition 2022 Network Track.",
+      "certified_date": "2022",
+      "due_to": ""
+    }
+  },
+  {
+    "data": {
+      "id": 2,
+      "type": "compe",
+      "title": "1st Winner of National UI/UX Design Competition INTEGER 2021",
+      "by": "Universitas Dinamika, Surabaya",
+      "description": "Won the 1st place in the National UI/UX Design Competition INTEGER 2021 organized by Universitas Dinamika, Surabaya.",
+      "certified_date": "2021",
+      "due_to": ""
+    }
+  },
+  {
+    "data": {
+      "id": 3,
+      "type": "compe",
+      "title": "3rd Runner Up of UI/UX Design Competition INTEGER#2 2020",
+      "by": "Universitas Pendidikan Ganesha, Bali",
+      "description": "Achieved 3rd place in the UI/UX Design Competition INTEGER#2 2020 held by Universitas Pendidikan Ganesha, Bali.",
+      "certified_date": "2020",
+      "due_to": ""
+    }
+  },
+  {
+    "data": {
+      "id": 4,
       "type": "certif",
       "title": "Huawei Certified ICT Associate (HCIA) Cloud Computing",
       "by": "Huawei",
@@ -12,7 +45,7 @@
   },
   {
     "data": {
-      "id": 2,
+      "id": 5,
       "type": "certif",
       "title": "Huawei Certified ICT Associate (HCIA) Artificial Intelligence",
       "by": "Huawei",
@@ -23,7 +56,7 @@
   },
   {
     "data": {
-      "id": 3,
+      "id": 6,
       "type": "certif",
       "title": "Huawei Certified ICT Associate (HCIA) Cloud Computing",
       "by": "Huawei",
@@ -34,7 +67,7 @@
   },
   {
     "data": {
-      "id": 4,
+      "id": 7,
       "type": "certif",
       "title": "TOEFL EPT PENS",
       "by": "TOEFL",
@@ -45,7 +78,7 @@
   },
   {
     "data": {
-      "id": 5,
+      "id": 8,
       "type": "certif",
       "title": "TOEIC International Test Center",
       "by": "TOEIC",
@@ -56,7 +89,7 @@
   },
   {
     "data": {
-      "id": 6,
+      "id": 9,
       "type": "certif",
       "title": "Binar Academy - Full Stack Web Development",
       "by": "Binar Academy",
@@ -67,7 +100,7 @@
   },
   {
     "data": {
-      "id": 7,
+      "id": 10,
       "type": "certif",
       "title": "Progate - Git",
       "by": "Progate",
@@ -78,7 +111,7 @@
   },
   {
     "data": {
-      "id": 8,
+      "id": 11,
       "type": "certif",
       "title": "Progate - Sass",
       "by": "Progate",
@@ -89,7 +122,7 @@
   },
   {
     "data": {
-      "id": 9,
+      "id": 12,
       "type": "certif",
       "title": "Progate - Python",
       "by": "Progate",
@@ -100,7 +133,7 @@
   },
   {
     "data": {
-      "id": 10,
+      "id": 13,
       "type": "certif",
       "title": "Progate - HTML & CSS Course",
       "by": "Progate",
