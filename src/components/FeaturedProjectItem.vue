@@ -71,7 +71,7 @@ const limitedItems = computed(() => {
               </p>
             </router-link>
             <p class="description">
-              {{ truncateDescription(project.data.description, 20) }}
+              {{ truncateDescription(project.data.description, 15) }}
             </p>
           </div>
 

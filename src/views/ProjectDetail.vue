@@ -93,7 +93,7 @@ p {
 
 @media (max-width: 1140px) {
   p {
-    width: 95%
+    width: 95%;
   }
 }
 
