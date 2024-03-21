@@ -67,4 +67,10 @@ a span {
   font-weight: 600;
   display: block;
 }
+
+@media (max-width: 1140px) {
+  .under-dev p {
+    font-size: 20px;
+  }
+}
 </style>
