@@ -52,7 +52,9 @@ const limitedItems = computed(() => {
           <div class="card-tag">
             Certified at {{ certif.data.certified_date }}
           </div>
-          <div class="card-tag">Due to {{ certif.data.due_to }}</div>
+          <div v-if="certif.data.due_to" class="card-tag">
+            Due to {{ certif.data.due_to }}
+          </div>
         </div>
       </div>
     </div>
