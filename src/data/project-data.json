@@ -43,5 +43,20 @@
         "type": ["PHP Native", "Bootstrap", "Deploy in VPS"]
       }
     }
+  },
+  {
+    "data": {
+      "id": 4,
+      "image": "bwa_challenge_full.png",
+      "title": "SMARTPJU (Penerangan Jalan Umum)",
+      "description": "Project based on learning from Kampus Merdeka Internship held by Digitalent Scolarship and colaborate with PT. Telkom Gresik and Dishub Gresik.",
+      "links": {
+        "view": "smartpju.my.id",
+        "github": "https://github.com/Aramdhann/smartpju-beta"
+      },
+      "tags": {
+        "type": ["PHP Native", "Bootstrap", "Deploy in VPS"]
+      }
+    }
   }
 ]

@@ -10,7 +10,7 @@ import projects from "@/data/project-data.json";
       <template #title>Featured Projects</template>
     </Header>
     <div class="project-list">
-      <FeaturedProjectItem :items="projects" :limit="3" />
+      <FeaturedProjectItem :items="projects" :limit="4" />
     </div>
   </section>
 </template>

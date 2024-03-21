@@ -53,6 +53,7 @@ h1 {
 
 .card-banner {
   min-height: 200px;
+  max-height: 200px;
   width: 300px;
   object-fit: cover;
   border-radius: 10px;
