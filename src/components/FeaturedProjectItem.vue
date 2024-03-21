@@ -42,11 +42,11 @@ const limitedItems = computed(() => {
 
 <template>
   <Toast v-if="showToast" />
-  <a
+  <router-link
     v-if="limitedItems && limitedItems.length > 0"
     v-for="(project, index) in limitedItems"
     :key="index"
-    :href="`/portofolio/${project.data.id}`"
+    :to="`/portofolio/${project.data.id}`"
   >
     <div class="card-base-animate">
       <div class="card card-animate">
@@ -93,7 +93,7 @@ const limitedItems = computed(() => {
         </div>
       </div>
     </div>
-  </a>
+  </router-link>
   <div v-else>No project data available</div>
 </template>
 
