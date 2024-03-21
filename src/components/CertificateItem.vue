@@ -46,7 +46,7 @@ const limitedItems = computed(() => {
           </div>
         </div>
         <p>
-          {{ truncateDescription(certif.data.description, 10) }}
+          {{ truncateDescription(certif.data.description, 15) }}
         </p>
         <div class="card-tag-list">
           <div class="card-tag">

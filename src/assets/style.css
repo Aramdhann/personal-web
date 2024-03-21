@@ -36,8 +36,7 @@ h1 {
 
 .card-certif {
   cursor: pointer;
-  max-width: fit-content;
-  width: max-content;
+  min-width: 330px;
   display: flex;
   flex-direction: column;
   padding: 10px;

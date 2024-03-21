@@ -5,7 +5,7 @@
       "type": "certif",
       "title": "Huawei Certified ICT Associate (HCIA) Cloud Computing",
       "by": "Huawei",
-      "description": "This certification program, offered by Huawei, focuses on cloud computing technologies. It covers various aspects of cloud computing, including infrastructure, platforms, and services. Participants learn about key concepts such as virtualization, storage, networking, and security in the context of cloud environments.",
+      "description": "This certification program, offered by Huawei, focuses on cloud computing technologies. It covers various aspects of cloud computing, including infrastructure, platforms, and services.",
       "certified_date": "Oct 2021",
       "due_to": "Oct 2024"
     }
@@ -13,10 +13,10 @@
   {
     "data": {
       "id": 2,
-      "type": "compe",
-      "title": "Huawei Certified ICT Associate (HCIA) Cloud Computing",
+      "type": "certif",
+      "title": "Huawei Certified ICT Associate (HCIA) Artificial Intelligence",
       "by": "Huawei",
-      "description": "This certification program, offered by Huawei, focuses on cloud computing technologies. It covers various aspects of cloud computing, including infrastructure, platforms, and services. Participants learn about key concepts such as virtualization, storage, networking, and security in the context of cloud environments.",
+      "description": "Huawei's AI certification program delves into machine learning, neural networks, and more. Participants gain practical insights into AI applications.",
       "certified_date": "Oct 2021",
       "due_to": "Oct 2024"
     }
@@ -30,6 +30,83 @@
       "description": "This certification program, offered by Huawei, focuses on cloud computing technologies. It covers various aspects of cloud computing, including infrastructure, platforms, and services. Participants learn about key concepts such as virtualization, storage, networking, and security in the context of cloud environments.",
       "certified_date": "Oct 2021",
       "due_to": "Oct 2024"
+    }
+  },
+  {
+    "data": {
+      "id": 4,
+      "type": "certif",
+      "title": "TOEFL EPT PENS",
+      "by": "TOEFL",
+      "description": "English Proficiency Test at PENS, scoring 450 (02/2023 – 02/2025).",
+      "certified_date": "Feb 2023",
+      "due_to": "Feb 2025"
+    }
+  },
+  {
+    "data": {
+      "id": 5,
+      "type": "certif",
+      "title": "TOEIC International Test Center",
+      "by": "TOEIC",
+      "description": "International Test Center with a score of 690 (04/2022 – 04/2024).",
+      "certified_date": "Apr 2022",
+      "due_to": "Apr 2024"
+    }
+  },
+  {
+    "data": {
+      "id": 6,
+      "type": "certif",
+      "title": "Binar Academy - Full Stack Web Development",
+      "by": "Binar Academy",
+      "description": "Full Stack Web Development course completed in 2022.",
+      "certified_date": "2022",
+      "due_to": ""
+    }
+  },
+  {
+    "data": {
+      "id": 7,
+      "type": "certif",
+      "title": "Progate - Git",
+      "by": "Progate",
+      "description": "Git course completed in 2022.",
+      "certified_date": "2022",
+      "due_to": ""
+    }
+  },
+  {
+    "data": {
+      "id": 8,
+      "type": "certif",
+      "title": "Progate - Sass",
+      "by": "Progate",
+      "description": "Sass course completed in 2022.",
+      "certified_date": "2022",
+      "due_to": ""
+    }
+  },
+  {
+    "data": {
+      "id": 9,
+      "type": "certif",
+      "title": "Progate - Python",
+      "by": "Progate",
+      "description": "Python course completed in 2022.",
+      "certified_date": "2022",
+      "due_to": ""
+    }
+  },
+  {
+    "data": {
+      "id": 10,
+      "type": "certif",
+      "title": "Progate - HTML & CSS Course",
+      "by": "Progate",
+      "description": "HTML & CSS course completed in 2021.",
+      "certified_date": "2021",
+      "due_to": ""
     }
   }
 ]

@@ -13,7 +13,7 @@ import certificates from "@/data/certif-data.json";
       <template #title> Certificate & Competition </template>
     </Header>
     <div class="certif-list">
-      <CertificateItem :items="certificates" :limit="3" />
+      <CertificateItem :items="certificates" :limit="5" />
     </div>
   </section>
 </template>

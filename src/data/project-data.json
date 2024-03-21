@@ -83,7 +83,7 @@
     "data": {
       "id": 6,
       "status": "Completed",
-      "image": "",
+      "image": "secondhand.png",
       "title": "Website Second Hand - Binar Academy",
       "description": "The Second Hand website is a website for buying and selling used goods as a final assignment for the Fullstack Web Development activity at Binar Academy, an independent study program at Merdeka Campus 2022. This activity was carried out online for 6 months from February 2022 to April 2022. In this final assignment, the mentor randomly divide each group member into 2 divisions, namely frontend and backend. And in this group, I was given the task of being in the frontend division with the task of creating the appearance of the website with the bootstrap framework and carrying out API integration.",
       "links": {
