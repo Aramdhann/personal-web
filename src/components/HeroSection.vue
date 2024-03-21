@@ -46,17 +46,35 @@ const position = ref([
           </div>
           <p>Open to work</p>
         </div>
-        <img
-          src="/images/photo.png"
-          alt="photo profile"
-          class="photo"
-        />
+        <img src="/images/photo.png" alt="photo profile" class="photo" />
+        <a href="https://drive.google.com/file/d/1CvAq4X4R6pEqgqAaGc59j28FmXCW_Pg0/view?usp=sharing" target="_blank">Download latest CV</a>
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
+.profile {
+  position: relative;
+}
+
+a {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 30px;
+  display: block;
+  text-decoration: none;
+  color: var(--main-color);
+  cursor: pointer;
+  width: fit-content;
+
+  &:hover {
+    opacity: 0.7;
+    transition: 0.2s ease-out;
+    border-bottom: 1px solid var(--main-color);
+  }
+}
+
 .hero {
   width: 100%;
   padding: 115px 0;
