@@ -74,7 +74,7 @@ const techStacks = ref([
 <style scoped>
 .tech {
   margin-top: 35px;
-  width: 90%;
+  width: 70%;
 }
 
 .tech .row {
@@ -99,7 +99,6 @@ const techStacks = ref([
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-left: 10px;
   font-size: 10px;
   cursor: default;
 }
@@ -110,6 +109,7 @@ const techStacks = ref([
   }
   .tech {
     width: 100%;
+    padding: 10px;
   }
 }
 </style>
