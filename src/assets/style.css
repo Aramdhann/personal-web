@@ -152,6 +152,8 @@ h1 {
 .card-tag-list {
   display: flex;
   gap: 5px;
+  overflow-x: auto;
+  padding-bottom: 17px;
 }
 
 .card-btn-list {

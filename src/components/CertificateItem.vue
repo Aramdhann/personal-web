@@ -71,5 +71,5 @@ const limitedItems = computed(() => {
   .certificate {
     padding: 80px 0;
   }
-}
+} 
 </style>

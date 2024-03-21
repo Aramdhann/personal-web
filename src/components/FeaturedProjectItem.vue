@@ -126,11 +126,6 @@ const limitedItems = computed(() => {
   height: 70px;
 }
 
-.card-tag-list {
-  overflow-x: auto;
-  padding-bottom: 17px;
-}
-
 .card-title:hover {
   text-decoration: underline;
 }
