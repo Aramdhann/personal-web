@@ -50,19 +50,22 @@ const limitedItems = computed(() => {
   >
     <div class="card-base-animate">
       <div class="card card-animate">
-        <img
-          class="card-banner"
-          :src="
-            project.data.image
-              ? `/images/projects/${project.data.image}`
-              : '/images/no-image.jpg'
-          "
-          :alt="project.data.title"
-        />
+        <div class="banner-group">
+          <img
+            class="card-banner"
+            :src="
+              project.data.image
+                ? `/images/projects/${project.data.image}`
+                : '/images/no-image.jpg'
+            "
+            :alt="project.data.title"
+          />
+          <p>{{project.data.status}}</p>
+        </div>
         <div class="card-content">
           <div>
             <p class="card-title">
-              {{ truncateDescription(project.data.title, 5) }}
+              {{ truncateDescription(project.data.title, 6) }}
             </p>
             <p class="description">
               {{ truncateDescription(project.data.description, 20) }}
@@ -98,6 +101,19 @@ const limitedItems = computed(() => {
 </template>
 
 <style scoped>
+.banner-group {
+  position: relative;
+}
+
+.banner-group p {
+  position: absolute;
+  top: 0;
+  border-radius: 10px 0 0 0;
+  padding: 5px;
+  color: var(--white);
+  background: var(--main-color);
+}
+
 .button-list {
   display: flex;
   flex-direction: column;
