@@ -45,7 +45,7 @@ const limitedItems = computed(() => {
             <p>held by {{ certif.data.by }}</p>
           </div>
         </div>
-        <p>
+        <p class="description">
           {{ truncateDescription(certif.data.description, 15) }}
         </p>
         <div class="card-tag-list">
