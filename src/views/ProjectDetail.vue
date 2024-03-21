@@ -22,8 +22,8 @@ const project = computed(() =>
         class="image"
         :src="
           project.data.image
-            ? `../src/assets/images/projects/${project.data.image}`
-            : '../src/assets/images/no-image.jpg'
+            ? `/images/projects/${project.data.image}`
+            : '/images/no-image.jpg'
         "
         :alt="project.data.title"
       />
