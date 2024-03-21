@@ -59,7 +59,7 @@ const limitedItems = computed(() => {
           "
           :alt="project.data.title"
         />
-        <div class="card-content testing">
+        <div class="card-content">
           <div>
             <p class="card-title">
               {{ truncateDescription(project.data.title, 5) }}
