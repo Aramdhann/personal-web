@@ -2,6 +2,7 @@
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 import projects from "@/data/project-data.json";
+import Tag from "@/components/Tag.vue";
 
 const route = useRoute();
 
@@ -17,6 +18,11 @@ const project = computed(() =>
       <a type="button" @click="$router.back()">Go Back</a>
     </div>
     <h2>{{ project.data.title ?? "loading..." }}</h2>
+    <div class="card-tag-list">
+      <Tag v-for="(tag, index) in project.data.tags.type" :key="index">
+        <template #title>{{ tag }}</template>
+      </Tag>
+    </div>
     <div class="image-group">
       <img
         class="image"
@@ -33,6 +39,12 @@ const project = computed(() =>
 </template>
 
 <style scoped>
+.card-tag-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 p {
   width: 70%;
   margin: 0 auto;
@@ -64,7 +76,7 @@ p {
 
 h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 a {

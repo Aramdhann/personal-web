@@ -48,14 +48,29 @@
     "data": {
       "id": 4,
       "image": "bwa_challenge_full.png",
-      "title": "SMARTPJU (Penerangan Jalan Umum)",
-      "description": "Participate challenge to slicing website from BuiltWithAngga",
+      "title": "Slicing BuiltWithAngga Challenge",
+      "description": "Participate challenge to slicing website that held by BuiltWithAngga.",
       "links": {
         "view": "smartpju.my.id",
         "github": "https://github.com/Aramdhann/smartpju-beta"
       },
       "tags": {
         "type": ["HTML", "CSS", "Bootstrap"]
+      }
+    }
+  },
+  {
+    "data": {
+      "id": 5,
+      "image": "cinema.png",
+      "title": "SMARTPJU (Penerangan Jalan Umum)",
+      "description": "Sea Cinema is a movie ticket booking application that allows users to browse and book movie tickets conveniently. With its intuitive interface and seamless functionality, Sea Cinema provides a hassle-free movie ticket booking experience.",
+      "links": {
+        "view": "https://cinema-ticket-booking-coral.vercel.app/",
+        "github": "https://github.com/Aramdhann/cinema-ticket-booking"
+      },
+      "tags": {
+        "type": ["HTML", "CSS"]
       }
     }
   }
