@@ -52,11 +52,14 @@ const techStacks = ref([
   <div class="tech">
     <div class="row">
       <div v-for="techStack in techStacks" :key="techStack.id" class="tooltip">
-      <img :src="`/images/tech-stack/${techStack.image}`" :alt="techStack.name" />
-      <span class="tooltip-text">
-        {{techStack.name}}
-      </span>
-    </div>
+        <img
+          :src="`/images/tech-stack/${techStack.image}`"
+          :alt="techStack.name"
+        />
+        <span class="tooltip-text">
+          {{ techStack.name }}
+        </span>
+      </div>
       <div>
         <p style="font-size: 20px; font-weight: lighter">+</p>
         <p>
@@ -104,6 +107,9 @@ const techStacks = ref([
 @media (max-width: 876px) {
   .row {
     justify-content: center;
+  }
+  .tech {
+    width: 100%;
   }
 }
 </style>

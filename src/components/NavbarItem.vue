@@ -109,4 +109,10 @@
     gap: 10px;
   }
 }
+
+@media (max-width: 1140px) {
+  .nav-item span {
+    font-size: 12px;
+  }
+}
 </style>

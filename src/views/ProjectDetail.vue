@@ -91,6 +91,12 @@ p {
   }
 }
 
+@media (max-width: 1140px) {
+  p {
+    width: 95%
+  }
+}
+
 .header {
   margin: 30px 0;
   display: flex;
