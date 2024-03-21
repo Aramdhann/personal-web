@@ -42,31 +42,34 @@ const limitedItems = computed(() => {
 
 <template>
   <Toast v-if="showToast" />
-  <router-link
+  <div
     v-if="limitedItems && limitedItems.length > 0"
     v-for="(project, index) in limitedItems"
     :key="index"
-    :to="`/portofolio/${project.data.id}`"
   >
     <div class="card-base-animate">
       <div class="card card-animate">
-        <div class="banner-group">
-          <img
-            class="card-banner"
-            :src="
-              project.data.image
-                ? `/images/projects/${project.data.image}`
-                : '/images/no-image.jpg'
-            "
-            :alt="project.data.title"
-          />
-          <p>{{project.data.status}}</p>
-        </div>
+        <router-link :to="`/portofolio/${project.data.id}`">
+          <div class="banner-group">
+            <img
+              class="card-banner"
+              :src="
+                project.data.image
+                  ? `/images/projects/${project.data.image}`
+                  : '/images/no-image.jpg'
+              "
+              :alt="project.data.title"
+            />
+            <p>{{ project.data.status }}</p>
+          </div>
+        </router-link>
         <div class="card-content">
           <div>
-            <p class="card-title">
-              {{ truncateDescription(project.data.title, 6) }}
-            </p>
+            <router-link :to="`/portofolio/${project.data.id}`">
+              <p class="card-title">
+                {{ truncateDescription(project.data.title, 6) }}
+              </p>
+            </router-link>
             <p class="description">
               {{ truncateDescription(project.data.description, 20) }}
             </p>
@@ -75,7 +78,6 @@ const limitedItems = computed(() => {
           <div class="button-list">
             <div class="card-btn-list">
               <a
-                type="button"
                 :href="project.data.links.view"
                 style="background: var(--main-color)"
                 @click="triggerToast"
@@ -96,7 +98,7 @@ const limitedItems = computed(() => {
         </div>
       </div>
     </div>
-  </router-link>
+  </div>
   <div v-else>No project data available</div>
 </template>
 
@@ -127,5 +129,9 @@ const limitedItems = computed(() => {
 .card-tag-list {
   overflow-x: auto;
   padding-bottom: 17px;
+}
+
+.card-title:hover {
+  text-decoration: underline;
 }
 </style>
