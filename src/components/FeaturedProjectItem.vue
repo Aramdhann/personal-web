@@ -59,29 +59,36 @@ const limitedItems = computed(() => {
           "
           :alt="project.data.title"
         />
-        <div class="card-content">
-          <p class="card-title">{{ project.data.title }}</p>
-          <p class="description">
-            {{ truncateDescription(project.data.description, 20) }}
-          </p>
-          <div class="card-btn-list">
-            <a
-              type="button"
-              :href="project.data.links.view"
-              style="background: var(--main-color)"
-              @click="triggerToast"
-              ><img src="/images/view.png" alt="view project"
-            /></a>
-            <a
-              :href="project.data.links.github"
-              style="background-color: var(--black)"
-              ><img src="/images/git.png" alt="github project"
-            /></a>
+        <div class="card-content testing">
+          <div>
+            <p class="card-title">
+              {{ truncateDescription(project.data.title, 5) }}
+            </p>
+            <p class="description">
+              {{ truncateDescription(project.data.description, 20) }}
+            </p>
           </div>
-          <div class="card-tag-list">
-            <Tag v-for="(tag, index) in project.data.tags.type" :key="index">
-              <template #title>{{ tag }}</template>
-            </Tag>
+
+          <div class="button-list">
+            <div class="card-btn-list">
+              <a
+                type="button"
+                :href="project.data.links.view"
+                style="background: var(--main-color)"
+                @click="triggerToast"
+                ><img src="/images/view.png" alt="view project"
+              /></a>
+              <a
+                :href="project.data.links.github"
+                style="background-color: var(--black)"
+                ><img src="/images/git.png" alt="github project"
+              /></a>
+            </div>
+            <div class="card-tag-list">
+              <Tag v-for="(tag, index) in project.data.tags.type" :key="index">
+                <template #title>{{ tag }}</template>
+              </Tag>
+            </div>
           </div>
         </div>
       </div>
@@ -91,6 +98,12 @@ const limitedItems = computed(() => {
 </template>
 
 <style scoped>
+.button-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .description {
   height: 70px;
 }

@@ -36,13 +36,10 @@ const limitedItems = computed(() => {
     :key="index"
     class="card-base-animate"
   >
-    <div class="card card-animate">
+    <div class="card-certif card-animate">
       <div class="card-content">
         <div class="card-header">
-          <img
-            :src="`/images/${certif.data.type}.png`"
-            alt="icon"
-          />
+          <img :src="`/images/${certif.data.type}.png`" alt="icon" />
           <div>
             <p class="certif-title">{{ certif.data.title }}</p>
             <p>held by {{ certif.data.by }}</p>
@@ -64,6 +61,10 @@ const limitedItems = computed(() => {
 </template>
 
 <style scoped>
+.card-content {
+  gap: 15px;
+}
+
 @media (max-width: 876px) {
   .certificate {
     padding: 80px 0;

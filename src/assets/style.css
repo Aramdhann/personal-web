@@ -30,12 +30,29 @@ h1 {
   box-shadow: 0px 0px 0px 1px var(--black) inset;
   border-radius: 10px;
   background-color: var(--secondary-color);
-  /* max-height: 450px; */
+  min-height: 500px;
+  align-items: stretch;
+}
+
+.card-certif {
+  cursor: pointer;
+  max-width: fit-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: var(--black);
+  gap: 10px;
+  border: 1px solid var(--black);
+  /* border inside div */
+  box-shadow: 0px 0px 0px 1px var(--black) inset;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
   align-items: stretch;
 }
 
 .card-banner {
-  height: 200px;
+  min-height: 200px;
   width: 300px;
   object-fit: cover;
   border-radius: 10px;
@@ -46,6 +63,7 @@ h1 {
   font-size: 20px;
   font-weight: bold;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 
 .card-content {
@@ -56,7 +74,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
-  gap: 15px;
+  height: 100%;
 }
 
 .card-base-animate {
