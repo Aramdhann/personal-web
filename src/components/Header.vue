@@ -10,7 +10,7 @@ const props = defineProps({
     <h1>
       <slot name="title"></slot>
     </h1>
-    <a :href="seeAllLink">{{ seeAllText }}</a>
+    <router-link :to="seeAllLink">{{ seeAllText }}</router-link>
   </div>
 </template>
 
