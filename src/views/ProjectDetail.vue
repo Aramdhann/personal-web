@@ -46,9 +46,7 @@ p {
 }
 
 .image {
-  height: 300px;
-  width: 500px;
-  object-fit: cover;
+  width: 700px;
   border-radius: 10px;
 }
 

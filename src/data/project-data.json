@@ -32,15 +32,15 @@
   {
     "data": {
       "id": 3,
-      "image": "",
-      "title": "",
-      "description": "Description for Project 3. This project involves advanced technologies and frameworks.",
+      "image": "smartpju.jpg",
+      "title": "SMARTPJU (Penerangan Jalan Umum)",
+      "description": "Project based on learning from Kampus Merdeka Internship held by Digitalent Scolarship and colaborate with PT. Telkom Gresik and Dishub Gresik.",
       "links": {
-        "view": "https://example.com/project3",
-        "github": "https://github.com/example/project3"
+        "view": "smartpju.my.id",
+        "github": "https://github.com/Aramdhann/smartpju-beta"
       },
       "tags": {
-        "type": ["Angular", "Materialize", "MongoDB"]
+        "type": ["PHP Native", "Bootstrap", "Deploy in VPS"]
       }
     }
   }
