@@ -27,6 +27,7 @@ a {
   text-decoration: none;
   color: var(--main-color);
   cursor: pointer;
+  text-align: right;
 
   &:hover {
     opacity: 0.7;
