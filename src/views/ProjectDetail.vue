@@ -17,7 +17,10 @@ const project = computed(() =>
     <div class="header">
       <a type="button" @click="$router.back()">Go Back</a>
     </div>
-    <h2>{{ project.data.title ?? "loading..." }}</h2>
+    <div class="title">
+      <h2>{{ project.data.title ?? "loading..." }}</h2>
+      <span>{{ project.data.status }}</span>
+    </div>
     <div class="card-tag-list">
       <Tag v-for="(tag, index) in project.data.tags.type" :key="index">
         <template #title>{{ tag }}</template>
@@ -39,6 +42,21 @@ const project = computed(() =>
 </template>
 
 <style scoped>
+.title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.title span {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: var(--main-color);
+  margin-bottom: 10px;
+}
+
 .card-tag-list {
   display: flex;
   justify-content: center;
@@ -58,13 +76,18 @@ p {
 }
 
 .image {
-  width: 700px;
+  width: 900px;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
 @media (max-width: 715px) {
   h2 {
     font-size: 16px;
+  }
+  .title span {
+    font-size: 14px;
   }
 }
 
